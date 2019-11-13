@@ -3,41 +3,41 @@
 #include <string>
 
 template<size_t n>
-int fact()
+int fibonacci()
 {
-    return fact<n-1>() + fact<n-2>();
+    return fibonacci<n-1>() + fibonacci<n-2>();
 }
 
 template<>
-int fact<1>()
+int fibonacci<1>()
 {
     return 1;
 }
 
 template<>
-int fact<2>()
+int fibonacci<2>()
 {
     return 1;
 }
 
 template<size_t n>
-int FactLikeABoss()
+int fibonacciLikeABoss()
 {
     if constexpr(n==1)
         return 1;
     else if constexpr(n==2)
         return 1;
     else
-       return FactLikeABoss<n-1>() + FactLikeABoss<n-2>();
+       return fibonacciLikeABoss<n-1>() + fibonacciLikeABoss<n-2>();
 }
 
 int main()
 {
-    std::cout<<FactLikeABoss<1>()<<'\n';
-    std::cout<<FactLikeABoss<2>()<<'\n';
-    std::cout<<FactLikeABoss<3>()<<'\n';
-    std::cout<<FactLikeABoss<4>()<<'\n';
-    std::cout<<FactLikeABoss<5>()<<'\n';
-    std::cout<<FactLikeABoss<6>()<<'\n';
+    std::cout<<fibonacciLikeABoss<1>()<<'\n';
+    std::cout<<fibonacciLikeABoss<2>()<<'\n';
+    std::cout<<fibonacciLikeABoss<3>()<<'\n';
+    std::cout<<fibonacciLikeABoss<4>()<<'\n';
+    std::cout<<fibonacciLikeABoss<5>()<<'\n';
+    std::cout<<fibonacciLikeABoss<6>()<<'\n';
 }
 ```
