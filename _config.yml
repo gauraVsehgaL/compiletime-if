@@ -1,6 +1,6 @@
 theme: jekyll-theme-minimal
-title: 'Mutable Use Case in C++'
-description: 'Motivation for compile time if in C++'
+title: 'Motivation for compile time if in C++'
+description: 'Motivation for compile time if (if constexpr) in C++'
 author: 'Gaurav Sehgal'
 twitter:
     username: gaurav__sehgal
